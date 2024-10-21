@@ -1,13 +1,10 @@
-### Code Description:
+### POMFO - Portfolio Optimization for Multi-Family Office
 
 This Python code is a **web-based portfolio optimization tool** built using the **Dash** framework and **Plotly** for visualization. It allows users to input personal financial details and generates a recommended portfolio allocation based on their risk tolerance. Additionally, the tool displays key metrics such as **expected annual return**, **portfolio volatility**, and the **Sharpe ratio**.
 
 #### Key Features:
 1. **User Input Fields**:
-   - The app collects user inputs such as:
-     - **Age**
-     - **Income**
-     - **Number of Dependents**
+   The app collects user inputs such as: Age, Income, Number of Dependents
    These inputs help determine the user's risk tolerance (Aggressive, Balanced, or Conservative).
 
 2. **Risk Tolerance and Portfolio Allocation**:
@@ -16,10 +13,7 @@ This Python code is a **web-based portfolio optimization tool** built using the 
      - **Balanced**: Moderate allocation to stocks and bonds.
      - **Conservative**: Higher allocation to bonds and cash.
    - The app then generates a corresponding portfolio allocation across four asset classes:
-     - **Stocks**
-     - **Bonds**
-     - **Real Estate**
-     - **Cash**
+     - **Stocks, Bonds, Real Estate, Cash**
 
 3. **Data Fetching with YFinance**:
    - The app uses the **yfinance** library to fetch historical stock market data for the selected asset classes (e.g., SPY for stocks, TLT for bonds, RSPR for real estate).
