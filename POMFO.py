@@ -13,11 +13,11 @@ def asset_allocation(risk_tolerance):
     Returns asset allocation based on the user's risk tolerance.
     """
     if risk_tolerance == "Aggressive":
-        return {"Stocks": 0.7, "Bonds": 0.2, "Real Estate": 0.05, "Cash": 0.05}
+        return {"Stocks": 0.6, "Bonds": 0.3, "Real Estate": 0.05, "Cash": 0.05}
     elif risk_tolerance == "Balanced":
-        return {"Stocks": 0.5, "Bonds": 0.3, "Real Estate": 0.15, "Cash": 0.05}
+        return {"Stocks": 0.3, "Bonds": 0.4, "Real Estate": 0.15, "Cash": 0.05}
     else:
-        return {"Stocks": 0.3, "Bonds": 0.5, "Real Estate": 0.1, "Cash": 0.1}
+        return {"Stocks": 0.1, "Bonds": 0.5, "Real Estate": 0.3, "Cash": 0.1}
 
 # Step 4: Fetch Historical Data using yfinance
 def get_asset_data(ticker):
