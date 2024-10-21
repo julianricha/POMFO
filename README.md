@@ -4,7 +4,7 @@ This Python application is a web-based portfolio optimization tool developed usi
 
 #### Key Features:
 1. **User Input Fields**:
-   The app collects user inputs such as: Age, Income, Number of Dependents
+   The app collects user inputs such as: Age, Net Worth, Number of Dependents
    These inputs help determine the user's risk tolerance (Aggressive, Balanced, or Conservative).
 
 2. **Risk Tolerance and Portfolio Allocation**:
