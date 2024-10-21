@@ -16,7 +16,8 @@ This Python code is a **web-based portfolio optimization tool** built using the 
      - **Stocks, Bonds, Real Estate, Cash**
 
 3. **Data Fetching with YFinance**:
-   - The app uses the **yfinance** library to fetch historical stock market data for the selected asset classes (e.g., SPY for stocks, TLT for bonds, RSPR for real estate).
+   - The app uses the **yfinance** library to fetch historical stock market data for the selected asset classes
+   - Used ETFs as proxys for simplicity: SPY for stocks, TLT for bonds, RSPR for real estate.
    - The fetched data is used to calculate the **expected return** and **volatility** for each asset class.
 
 4. **Portfolio Metrics Calculation**:
