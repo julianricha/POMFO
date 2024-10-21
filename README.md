@@ -1,6 +1,6 @@
 ### POMFO - Portfolio Optimization for Multi-Family Office
 
-This Python code is a **web-based portfolio optimization tool** built using the **Dash** framework and **Plotly** for visualization. It allows users to input personal financial details and generates a recommended portfolio allocation based on their risk tolerance. Additionally, the tool displays key metrics such as **expected annual return**, **portfolio volatility**, and the **Sharpe ratio**.
+This Python application is a web-based portfolio optimization tool developed using the Dash framework and Plotly for data visualization. The app allows users to input their personal financial details and generates a recommended portfolio allocation based on their determined risk tolerance. Additionally, it displays key metrics such as the expected annual return, portfolio volatility, and the Sharpe ratio, utilizing real-time financial data fetched from Yahoo Finance through the YFinance API.
 
 #### Key Features:
 1. **User Input Fields**:
