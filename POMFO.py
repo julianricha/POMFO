@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
@@ -95,15 +89,15 @@ app.layout = html.Div([
     
     # Input fields for user data
     html.Div([
-        html.Label("Enter Your Age:"),
+        html.Label("Enter Your Age: "),
         dcc.Input(id='input-age', type='number', value=30),
     ]),
     html.Div([
-        html.Label("Enter Your Income:"),
-        dcc.Input(id='input-income', type='number', value=50000),
+        html.Label("Enter Your Net Worth: "),
+        dcc.Input(id='input-net-worth', type='number', value=500000),
     ]),
     html.Div([
-        html.Label("Enter Number of Dependents:"),
+        html.Label("Enter Number of Dependents: "),
         dcc.Input(id='input-dependents', type='number', value=0),
     ]),
     
@@ -122,15 +116,15 @@ app.layout = html.Div([
      Output('metrics-output', 'children')],
     Input('submit-button', 'n_clicks'),
     State('input-age', 'value'),
-    State('input-income', 'value'),
+    State('input-net-worth', 'value'),
     State('input-dependents', 'value'),
 )
-def update_pie_chart(n_clicks, age, income, dependents):
+def update_pie_chart(n_clicks, age, net_worth, dependents):
     if n_clicks > 0:
         # Step 2: Determine risk tolerance based on user inputs
-        if age < 35 and income > 50000 and dependents == 0:
+        if age < 35 and net_worth > 500000 and dependents == 0:
             risk_tolerance = "Aggressive"
-        elif 35 <= age < 50 and income > 30000:
+        elif 35 <= age < 50 and net_worth > 250000:
             risk_tolerance = "Balanced"
         else:
             risk_tolerance = "Conservative"
@@ -168,10 +162,3 @@ def update_pie_chart(n_clicks, age, income, dependents):
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-# In[ ]:
-
-
-
-
